@@ -1,6 +1,6 @@
 steps:
 - name: gcr.io/internal-200822/windows-builder
-  args: ['systeminfo ']
+  args: ['systeminfo']
 # - name: angular/ngcontainer:0.7.0
 #   entrypoint: yarn
 #   args: ['install']
@@ -9,3 +9,4 @@ steps:
 #   args: ['info']  
 # - name: gcr.io/cloud-builders/bazel
 #   args: ['build', '//...']  
+timeout: 3600s
