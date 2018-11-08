@@ -9,13 +9,19 @@ steps:
 #   args: ['info']  
 # - name: gcr.io/cloud-builders/bazel
 #   args: ['build', '//...']  
-- name: angular/ngcontainer:0.7.0
-  entrypoint: node
-  args: ['--version']
-- name: angular/ngcontainer:0.7.0
-  entrypoint: npm
-  args: ['--version']
-- name: angular/ngcontainer:0.7.0
-  entrypoint: yarn
-  args: ['--version']
+# - name: angular/ngcontainer:0.7.0
+#   entrypoint: node
+#   args: ['--version']
+# - name: angular/ngcontainer:0.7.0
+#   entrypoint: npm
+#   args: ['--version']
+# - name: angular/ngcontainer:0.7.0
+#   entrypoint: yarn
+#   args: ['--version']
+- name: 'gcr.io/$PROJECT_ID/windows-builder'
+  args: [ 'C:\workspace\hello.bat' ]
+- name: 'gcr.io/$PROJECT_ID/windows-builder'
+  args: [ 'C:\workspace\hello.bat' ]
+- name: 'gcr.io/$PROJECT_ID/windows-builder'
+  args: [ 'C:\workspace\hello.bat' ]
 timeout: 3600s
