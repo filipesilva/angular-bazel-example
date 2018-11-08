@@ -1,6 +1,6 @@
 steps:
-- name: gcr.io/internal-200822/windows-builder
-  args: ['systeminfo']
+- name: 'gcr.io/$PROJECT_ID/windows-builder'
+  args: [ 'C:\workspace\hello.bat' ]
 # - name: angular/ngcontainer:0.7.0
 #   entrypoint: yarn
 #   args: ['install']
