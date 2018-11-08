@@ -1,0 +1,8 @@
+steps:
+- name: node:10.10.0
+  entrypoint: yarn
+  args: ['install']
+- name: gcr.io/cloud-builders/bazel
+  args: ['info']  
+- name: gcr.io/cloud-builders/bazel
+  args: ['build', '//...']  
