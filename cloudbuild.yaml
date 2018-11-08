@@ -1,8 +1,9 @@
 steps:
-- name: node:10.10.0
+- name: angular/ngcontainer:0.7.0
   entrypoint: yarn
   args: ['install']
-- name: gcr.io/cloud-builders/bazel
+- name: angular/ngcontainer:0.7.0
+  entrypoint: bazel
   args: ['info']  
-- name: gcr.io/cloud-builders/bazel
-  args: ['build', '//...']  
+# - name: gcr.io/cloud-builders/bazel
+#   args: ['build', '//...']  
