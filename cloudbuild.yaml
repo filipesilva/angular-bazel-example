@@ -1,9 +1,11 @@
 steps:
-- name: angular/ngcontainer:0.7.0
-  entrypoint: yarn
-  args: ['install']
-- name: angular/ngcontainer:0.7.0
-  entrypoint: bazel
-  args: ['info']  
+- name: gcr.io/internal-200822/windows-builder
+  args: ['systeminfo ']
+# - name: angular/ngcontainer:0.7.0
+#   entrypoint: yarn
+#   args: ['install']
+# - name: angular/ngcontainer:0.7.0
+#   entrypoint: bazel
+#   args: ['info']  
 # - name: gcr.io/cloud-builders/bazel
 #   args: ['build', '//...']  
