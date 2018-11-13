@@ -19,9 +19,9 @@ steps:
 #   entrypoint: yarn
 #   args: ['--version']
 - name: 'gcr.io/$PROJECT_ID/windows-builder'
-  args: [ 'C:\workspace\hello.bat' ]
+  args: [ '--command', 'dir' ]
 - name: 'gcr.io/$PROJECT_ID/windows-builder'
-  args: [ 'C:\workspace\hello.bat' ]
+  args: [ '--command', 'dir' ]
 - name: 'gcr.io/$PROJECT_ID/windows-builder'
-  args: [ 'C:\workspace\hello.bat' ]
+  args: [ '--command', 'dir' ]
 timeout: 3600s
